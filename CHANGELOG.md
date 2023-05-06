@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.1.0](https://github.com/ublue-os/nvidia/compare/v1.0.0...v1.1.0) (2023-05-06)
+
+
+### Features
+
+* Add 530xx series support and disable 525xx series support ([#81](https://github.com/ublue-os/nvidia/issues/81)) ([b15964d](https://github.com/ublue-os/nvidia/commit/b15964d63c519e4771eb9bbad5233ba965d45cbd))
+* add supergfxctl package ([#77](https://github.com/ublue-os/nvidia/issues/77)) ([20000b9](https://github.com/ublue-os/nvidia/commit/20000b9aeab0ee5ad436ad394983dfb20baecb37))
+* Break up build process into separate jobs to improve caching in matrix strategy ([#63](https://github.com/ublue-os/nvidia/issues/63)) ([581f1fa](https://github.com/ublue-os/nvidia/commit/581f1fa78f3ff59d3405e2ab79e98960fa3d3c1e))
+* download RPM metadata in build stage to lower bandwidth usage in final stage ([#65](https://github.com/ublue-os/nvidia/issues/65)) ([95d9c13](https://github.com/ublue-os/nvidia/commit/95d9c132c2f8908d7b5e4fcf7362219286502bb4))
+* switch the latest tag to F38 ([#97](https://github.com/ublue-os/nvidia/issues/97)) ([91aac1a](https://github.com/ublue-os/nvidia/commit/91aac1ad00cb78e86edb3f284a5d224f0146e0ef))
+
+
+### Bug Fixes
+
+* disable 520xx series due to broken compatibility in latest kernels ([#74](https://github.com/ublue-os/nvidia/issues/74)) ([1f5306b](https://github.com/ublue-os/nvidia/commit/1f5306bf30651aac2486dcce0e8785112bdb2f38))
+* Ensure /tmp has right permissions set ([#67](https://github.com/ublue-os/nvidia/issues/67)) ([d743ca0](https://github.com/ublue-os/nvidia/commit/d743ca0a0afd3572e2af83c1d075398d17db9c33))
+* image name and description variable interpolation ([#62](https://github.com/ublue-os/nvidia/issues/62)) ([cf4e489](https://github.com/ublue-os/nvidia/commit/cf4e489c60871cc1bcf3fcd0f797bfbe22bd5731))
+* maintain oci image version from upstream ([#76](https://github.com/ublue-os/nvidia/issues/76)) ([f0537de](https://github.com/ublue-os/nvidia/commit/f0537de2c808b6e12fdb3962e401bc34389aefa6))
+* use skopeo for more efficient upstream image introspection ([#79](https://github.com/ublue-os/nvidia/issues/79)) ([9bdcd6e](https://github.com/ublue-os/nvidia/commit/9bdcd6eff5b1cf0d5d8db3b69af6d7fabfce3e18))
+
 ## 1.0.0 (2023-03-07)
 
 
